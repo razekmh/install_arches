@@ -69,7 +69,7 @@ sudo systemctl start elasticsearch.service
 # create project
 cd /opt
 mkdir projects && cd projects
-sudo apt-get install python3-dev python3-venv -y
+sudo apt-get install git python3-dev python3-venv -y
 python3 -m venv ENV
 source ENV/bin/activate
 git clone -b stable/5.2.x https://github.com/archesproject/arches.git
