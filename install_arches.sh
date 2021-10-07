@@ -79,5 +79,6 @@ pip install -r arches/install/requirements_dev.txt
 cd ..
 arches-project create my_project
 cd my_project
-python manage.py setup_db
+python manage.py setup_db -y
+python manage.py packages -o load_package -s https://github.com/archesproject/arches-example-pkg/archive/master.zip -db
 
